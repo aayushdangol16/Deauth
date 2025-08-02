@@ -24,8 +24,10 @@ This Python script uses **Scapy** to scan Wi-Fi networks on the 2.4 GHz band (ch
 
 ### Step-by-step
 
-1. Clone the repository or place the script and `requirements.txt` in the same folder.
-
+1. Clone the repository
+```bash
+git clone https://github.com/aayushdangol16/Deauth.git
+```
 2. Install dependencies using `requirements.txt`:
 
 ```bash
@@ -55,13 +57,13 @@ This creates a monitor mode interface like `wlan0mon`.
 Run the script with root privileges and specify your monitor interface:
 
 ```bash
-sudo python3 deauth_tool.py <monitor_interface>
+sudo python3 deauth.py <monitor_interface>
 ```
 
 Example:
 
 ```bash
-sudo python3 deauth_tool.py wlan0mon
+sudo python3 deauth.py wlan0mon
 ```
 
 ### How it works
